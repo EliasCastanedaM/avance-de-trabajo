@@ -12,7 +12,7 @@ public class Conexion {
     
     private static final String URL = "jdbc:mysql://localhost:3306/inventario";
     private static final String USUARIO = "root";
-    private static final String CONTRASEÑA = "";
+    private static final String CONTRASEÑA = "Xboxlive123";
     
     public static Connection conectar(){
     
@@ -24,6 +24,7 @@ public class Conexion {
             conexion = DriverManager.getConnection(URL, USUARIO, CONTRASEÑA);
             System.out.println("✅ Conexión exitosa a la base de datos.");
             System.out.println("ASDASDSAD");
+            System.out.println("jejejejej");
         }  catch (SQLException e) {
             System.out.println("❌ Error de conexión a la base de datos.");
             e.printStackTrace();

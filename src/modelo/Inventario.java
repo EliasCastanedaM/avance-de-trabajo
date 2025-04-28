@@ -9,17 +9,27 @@ public class Inventario {
     
     int inventario_id;
     int cantidad_actual;
-    int stock_maximo;
-    int stock_minimo;
+    int ubicacion_id;
+    int zapato_id;
 
     public Inventario() {
     }
+    
+    public Inventario(int inventario_id){
+        this.inventario_id= inventario_id;
+    }
 
-    public Inventario(int inventario_id, int cantidad_actual, int stock_maximo, int stock_minimo) {
+    public Inventario(int inventario_id, int cantidad_actual, int ubicacion_id, int zapato_id) {
         this.inventario_id = inventario_id;
         this.cantidad_actual = cantidad_actual;
-        this.stock_maximo = stock_maximo;
-        this.stock_minimo = stock_minimo;
+        this.ubicacion_id = ubicacion_id;
+        this.zapato_id = zapato_id;
+    }
+
+    public Inventario(int cantidad_actual, int ubicacion_id, int zapato_id) {
+        this.cantidad_actual = cantidad_actual;
+        this.ubicacion_id = ubicacion_id;
+        this.zapato_id = zapato_id;
     }
 
     public int getInventario_id() {
@@ -38,21 +48,22 @@ public class Inventario {
         this.cantidad_actual = cantidad_actual;
     }
 
-    public int getStock_maximo() {
-        return stock_maximo;
+    public int getUbicacion_id() {
+        return ubicacion_id;
     }
 
-    public void setStock_maximo(int stock_maximo) {
-        this.stock_maximo = stock_maximo;
+    public void setUbicacion_id(int ubicacion_id) {
+        this.ubicacion_id = ubicacion_id;
     }
 
-    public int getStock_minimo() {
-        return stock_minimo;
+    public int getZapato_id() {
+        return zapato_id;
     }
 
-    public void setStock_minimo(int stock_minimo) {
-        this.stock_minimo = stock_minimo;
+    public void setZapato_id(int zapato_id) {
+        this.zapato_id = zapato_id;
     }
+    
     
     
 
