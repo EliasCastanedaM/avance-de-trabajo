@@ -24,7 +24,7 @@ public class Conexion {
             conexion = DriverManager.getConnection(URL, USUARIO, CONTRASEÑA);
             System.out.println("✅ Conexión exitosa a la base de datos.");
             System.out.println("ASDASDSAD");
-            System.out.println("jejejejej");
+            System.out.println("xxxxxxx");
         }  catch (SQLException e) {
             System.out.println("❌ Error de conexión a la base de datos.");
             e.printStackTrace();
