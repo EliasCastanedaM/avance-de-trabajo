@@ -12,7 +12,7 @@ public class Conexion {
     
     private static final String URL = "jdbc:mysql://localhost:3306/inventario";
     private static final String USUARIO = "root";
-    private static final String CONTRASEÑA = "";
+    private static final String CONTRASEÑA = "Xboxlive123";
     
     public static Connection conectar(){
     
