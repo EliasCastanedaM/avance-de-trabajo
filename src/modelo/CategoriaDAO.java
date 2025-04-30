@@ -50,37 +50,11 @@ public class CategoriaDAO extends Conexion implements ICategoria{
             this.rs=stm.executeQuery(codigo);
         
         
-        }catch(SQLException e)
-
+        }catch(SQLException e){
+            
+        }
+        return null;
     }
-
-    @Override
-    public ResultSet getBuscarPorNombre(String nombre) {
-        return ICategoria.super.getBuscarPorNombre(nombre); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
-    }
-
-    @Override
-    public ResultSet getFiltrar(String valor) {
-        return ICategoria.super.getFiltrar(valor); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
-    }
-
-    @Override
-    public void registrar(Categoria registro) {
-        ICategoria.super.registrar(registro); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
-    }
-
-    @Override
-    public void editar(Categoria registro) {
-        ICategoria.super.editar(registro); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
-    }
-
-    @Override
-    public void eliminar(String codigo) {
-        ICategoria.super.eliminar(codigo); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
-    }
-    
-    
-   
 
     
 }

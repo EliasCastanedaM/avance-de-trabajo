@@ -18,7 +18,7 @@ public class probando {
      */
     public static void main(String[] args) {
     CategoriaDAO dao = new CategoriaDAO(); // tu clase DAO con getListar
-
+//gay
     ResultSet rs = dao.getListar();
 
     try {
